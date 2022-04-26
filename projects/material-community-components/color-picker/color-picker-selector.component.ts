@@ -724,7 +724,7 @@ export class MccColorPickerSelectorComponent implements AfterViewInit, OnInit, O
       this.setXYSelector(os);
 
       const data: Uint8ClampedArray = this._blockContext.getImageData(os.x ? os.x - 1 : os.x, os.y ? os.y - 1 : os.y, 1, 1).data;
-      const color: Color = new TinyColor({ r: data[0], g: data[1], b: data[2], a: this._selectedColor.getAlpha() });
+      const color: Color = new TinyColor({ r: data[0], g: data[1], b: data[2], a: 1 });
       this._updateRGBAForm(color);
       this._updateHexForm(color);
       if (this.colorPickerCollectionService.alpha) {
