@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/package.schema.json",
-  "name": "material-community-components",
+  "name": "@foxlew/material-community-components",
   "version": "11.0.3",
   "ngPackage": {
     "lib": {
